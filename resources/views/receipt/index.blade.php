@@ -19,9 +19,10 @@
 
 <form action="{{route('receipt.index')}}" method="get">
     <input class="form-control" type="date" name="date"/>
-    <input class="btn btn-success" type="submit"  value="search"/>
+    <input class="btn btn-success" type="submit"  value="تصفية"/>
 </form>
-<button class="btn btn-primary"><a href="{{route('receipt.index')}}">الكل</a></button>
+<a href="{{route('receipt.index')}}">
+<button class="btn btn-primary">الكل</button></a>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
