@@ -1,0 +1,22 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import "bootstrap";
+
+
+
+.company_img{
+    width: 50px;
+}
+
+.login_btn ,.btn-success {
+    background-color: #862b91 !important;
+}
+.navbar{
+    background-color: #862b91 !important;
+}
+
+.delete_btn{
+    color: red;
+
+}
