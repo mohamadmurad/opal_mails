@@ -105,7 +105,7 @@ class MyReceiptsController extends Controller
     public function show(Request $request, receipts $MyReceipt){
 
 
-        $MyReceipt->load('employee.company');
+        $MyReceipt->load(['employee.company','manager']);
 
        // $actions = $MyReceipt->manager[0];
       //  dd($actions);
