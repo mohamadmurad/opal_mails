@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="h">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myreceipt/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myreceipt/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/receipt/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/receipt/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +189,7 @@
       <workItem from="1606050750239" duration="1761000" />
       <workItem from="1606052638289" duration="46473000" />
       <workItem from="1606290222432" duration="13156000" />
-      <workItem from="1606375178648" duration="8628000" />
+      <workItem from="1606375178648" duration="9636000" />
     </task>
     <task id="LOCAL-00001" summary="h">
       <created>1606387740903</created>
@@ -402,7 +401,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606400193895</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="h">
+      <created>1606400305268</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1606400305268</updated>
+    </task>
+    <task id="LOCAL-00032" summary="h">
+      <created>1606400512175</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1606400512175</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,10 +449,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="168" key="Vcs.Push.Dialog.v2" timestamp="1606400196623">
+    <state x="312" y="168" key="Vcs.Push.Dialog.v2" timestamp="1606400516349">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606400196623" />
+    <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606400516349" />
     <state x="92" y="92" width="1256" height="676" key="dock-window-1" timestamp="1606118076338">
       <screen x="0" y="0" width="1440" height="860" />
     </state>

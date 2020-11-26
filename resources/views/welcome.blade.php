@@ -21,4 +21,29 @@
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
 
 
+        <div class="text-center">
+            @auth
+                @if(\Illuminate\Support\Facades\Auth::user()->isAdmin === 1)
+                    <a href="{{route('receipt.index')}}"><button class="btn btn-dark">كل أوامر الدفع</button></a>
+                    <a href="{{route('MyReceipt.index')}}"><button class="btn btn-dark">أوامر الدفع</button></a>
+
+                @elseif( \Illuminate\Support\Facades\Auth::user()->isManager === 0)
+                    <a href="{{route('MyReceipt.index')}}"><button class="btn btn-dark">أوامر الدفع</button></a>
+                @else
+                    <a href="{{route('receipt.index')}}"><button class="btn btn-dark">كل أوامر الدفع</button></a>
+
+                @endif
+            @else
+                <a href="{{route('login')}}"><button class="btn btn-dark">تسجيل الدخول</button></a>
+            @endauth
+
+
+        </div>
+
     </div>
+<script>
+    import Button from "@/Jetstream/Button";
+    export default {
+        components: {Button}
+    }
+</script>
