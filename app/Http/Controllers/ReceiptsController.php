@@ -14,10 +14,16 @@ include 'ar/Arabic.php';
 
 class ReceiptsController extends Controller
 {
-    public function index()
+    public function index(Request  $request)
     {
 
-        $receipts = receipts::orderBy('created_at','desc')->paginate();
+        if ($request->has('date')){
+            $receipts = receipts::whereDate('created_at',$request->get('date'))->paginate();
+
+        }else{
+            $receipts = receipts::orderBy('created_at','desc')->paginate();
+
+        }
 
         $receipts->load('employee');
 

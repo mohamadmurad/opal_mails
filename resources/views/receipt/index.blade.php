@@ -17,6 +17,10 @@
         </div>
     @endif
 
+    <form action="{{route('receipt.index')}}" method="get">
+        <input type="date" name="date"/>
+        <input type="submit"  value="search"/>
+    </form>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
