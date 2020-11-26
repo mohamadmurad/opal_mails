@@ -49,8 +49,9 @@
         </tr>
         <?php $i = 0?>
         @foreach ($receipts as $receipt)
+            <a  href="{{ route('receipt.show',$receipt->id) }}">
             <tr class="{{$receipt->status === 0 ? 'table-danger' : '' }}">
-                <a  href="{{ route('receipt.show',$receipt->id) }}">
+
                 <td>{{ ++$i }}</td>
 
                 <td>{{ $receipt->recipient_name }}</td>
@@ -110,8 +111,9 @@
 {{--                        </div>--}}
 {{--                    @endif--}}
                 </td>
-                </a>
+
             </tr>
+            </a>
         @endforeach
     </table>
 </div>
