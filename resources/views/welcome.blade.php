@@ -40,7 +40,7 @@
 
         </div>
 
-    </div>
+
 <script>
     import Button from "@/Jetstream/Button";
     export default {
