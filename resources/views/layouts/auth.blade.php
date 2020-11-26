@@ -118,7 +118,7 @@
     </nav>
 
 
-    <div class="container mt-lg-5 text-right">
+    <div class="container mt-5 text-right">
 
         @yield('content')
 
