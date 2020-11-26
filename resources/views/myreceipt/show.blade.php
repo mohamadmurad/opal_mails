@@ -68,7 +68,7 @@
 
     <div class="row">
 
-            @if(count($MyReceipt->manager) === 0)
+            @if($MyReceipt->status === null)
                 <div class="col">
                     <p>في الانتظار...</p>
                 </div>
