@@ -110,46 +110,40 @@
 
 
     <div class="accordion mt-lg-5" id="accordionExample">
-        <?php
-        $i = 1
-        ?>
-        @foreach($MyReceipt->manager as $action)
-            <div class="card">
-                <div class="card-header" id="heading{{$i++}}">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapse{{$i}}" aria-expanded="true" aria-controls="collapse{{$i}}">
-
-                            @if($action->status->status === 0)
-                                <i class="fa fa-times-circle" style="color: red"></i>
-                            @else
-                                <i class="fa fa-check-circle" style="color: green"></i>
-                            @endif
-
-                            {{$action->name}}
-                        </button>
-                    </h2>
-                </div>
-
-                <div id="collapse{{$i}}" class="collapse" aria-labelledby="heading{{$i}}" data-parent="#accordionExample">
-                    <div class="card-body">
-
-                        {{$action->status->notes}}
-                        <br>
-                        {{$action->status->created_at->format('Y-m-d h:m')}}
 
 
-                    </div>
+        <div class="card">
+            <div class="card-header" id="heading1">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+
+                        @if($receipt->status === 0)
+                            <i class="fa fa-times-circle" style="color: red"></i>
+                        @else
+                            <i class="fa fa-check-circle" style="color: green"></i>
+                        @endif
+
+                        {{$receipt->manager->name}}
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    {{$receipt->notes}}
+                    <br>
+                    {{$receipt->updated_at->format('Y-m-d h:m')}}
+
+
                 </div>
             </div>
-           <?php
-            $i++
-           ?>
-
-        @endforeach
-
+        </div>
 
 
     </div>
+
+
 
 
 

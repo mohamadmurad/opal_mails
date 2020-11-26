@@ -19,10 +19,16 @@ class CreateReceiptsTable extends Migration
             $table->unsignedInteger('amount');
             $table->text('reason');
             $table->boolean('status')->default(0)->nullable();
-
+            $table->text('notes')->nullable();
 
             $table->foreignId('employee_id')->nullable();
             $table->foreign('employee_id')
+                ->on('users')
+                ->references('id')->onDelete('set null');
+
+
+            $table->foreignId('manager_id')->nullable();
+            $table->foreign('manager_id')
                 ->on('users')
                 ->references('id')->onDelete('set null');
 

@@ -46,6 +46,12 @@ class receipts extends Model
 
     }
 
+    public function manager(){
+
+        return $this->belongsTo(User::class,'manager_id','id');
+
+    }
+
 
     public function company(){
 
@@ -54,12 +60,12 @@ class receipts extends Model
     }
 
 
-    public function manager(){
-        return $this->belongsToMany(User::class,'receipts_status')
-            ->withPivot('status','notes')
-            ->as('status')
-            ->withTimestamps();
-    }
+//    public function manager(){
+//        return $this->belongsToMany(User::class,'receipts_status')
+//            ->withPivot('status','notes')
+//            ->as('status')
+//            ->withTimestamps();
+//    }
 
 
     public function files(){
