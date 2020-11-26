@@ -35,6 +35,7 @@
 
 </form>
 
+<div class="table-responsive">
     <table class="table table-bordered">
         <tr>
             <th>#</th>
@@ -110,6 +111,7 @@
             </tr>
         @endforeach
     </table>
+</div>
     <div class="d-flex justify-content-center">
         {!! $receipts->links() !!}
     </div>
