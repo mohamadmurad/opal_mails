@@ -20,7 +20,7 @@
 <form action="{{route('receipt.index')}}" method="get">
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <input class="form-control " type="date" name="date"/>
+            <input class="form-control " type="date" name="date" placeholder="التاريخ" />
         </div>
 
 
