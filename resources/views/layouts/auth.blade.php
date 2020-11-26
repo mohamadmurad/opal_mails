@@ -24,13 +24,7 @@
 
 
     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark " style="color: white">
-        @auth
-            @if(Storage::disk('logo')->exists(\Illuminate\Support\Facades\Auth::user()->company->logo))
-                <img src="data:image/jpeg;base64,{{ base64_encode(Storage::disk('logo')->get(\Illuminate\Support\Facades\Auth::user()->company->logo)) }}"
-                     width="50" height="50"  loading="lazy" alt="{{\Illuminate\Support\Facades\Auth::user()->company->name}}">
-                {{\Illuminate\Support\Facades\Auth::user()->company->name}}
-            @endif
-        @endauth
+        Opal & Go Toys
 
 
 
