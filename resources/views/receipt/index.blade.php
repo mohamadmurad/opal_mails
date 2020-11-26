@@ -28,12 +28,13 @@
     <div class="col-xs-4 col-sm-4 col-md-4">
         <div class="form-group">
             <input class="btn btn-success" type="submit"  value="تصفية"/>
+            <a href="{{route('receipt.index')}}">
+                <button class="btn btn-primary">الكل</button></a>
         </div>
     </div>
 
 </form>
-<a href="{{route('receipt.index')}}">
-<button class="btn btn-primary">الكل</button></a>
+
     <table class="table table-bordered">
         <tr>
             <th>#</th>

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="h">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/receipt/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/receipt/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +188,7 @@
       <workItem from="1606050750239" duration="1761000" />
       <workItem from="1606052638289" duration="46473000" />
       <workItem from="1606290222432" duration="13156000" />
-      <workItem from="1606375178648" duration="8210000" />
+      <workItem from="1606375178648" duration="8292000" />
     </task>
     <task id="LOCAL-00001" summary="h">
       <created>1606387740903</created>
@@ -367,7 +365,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606399768566</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="h">
+      <created>1606399882436</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606399882436</updated>
+    </task>
+    <task id="LOCAL-00027" summary="h">
+      <created>1606399924983</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606399924983</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,10 +413,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="168" key="Vcs.Push.Dialog.v2" timestamp="1606399770000">
+    <state x="312" y="168" key="Vcs.Push.Dialog.v2" timestamp="1606399926695">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606399770000" />
+    <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606399926695" />
     <state x="92" y="92" width="1256" height="676" key="dock-window-1" timestamp="1606118076338">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
