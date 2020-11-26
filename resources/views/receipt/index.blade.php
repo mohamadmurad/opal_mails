@@ -18,8 +18,8 @@
     @endif
 
 <form action="{{route('receipt.index')}}" method="get">
-    <input class="form-control" type="date" name="date"/>
-    <input class="btn btn-success" type="submit"  value="تصفية"/>
+    <input class="form-control col" type="date" name="date"/>
+    <input class="btn btn-success col" type="submit"  value="تصفية"/>
 </form>
 <a href="{{route('receipt.index')}}">
 <button class="btn btn-primary">الكل</button></a>
