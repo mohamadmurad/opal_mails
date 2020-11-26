@@ -22,6 +22,8 @@
             <th>#</th>
             <th>اسم المستلم</th>
             <th>المبلغ</th>
+            <th>الشركة</th>
+            <th>حالة الطلب</th>
             <th>الموظف</th>
             <th width="280px">خيارات</th>
         </tr>
@@ -32,6 +34,21 @@
 
                 <td>{{ $receipt->recipient_name }}</td>
                 <td>{{ $receipt->amount }}</td>
+                <td>{{ $receipt->company->name }}</td>
+
+                @if($receipt->status === 1)
+                    <td style="color: forestgreen">
+                        تم القبول
+                    </td>
+                @elseif($receipt->status === 0)
+                    <td style="color: red">
+                        تم الرفض
+                    </td>
+                @else
+                    <td >
+                        في الانظار
+                    </td>
+                @endif
                 <td>{{ $receipt->employee->name }}</td>
 
 

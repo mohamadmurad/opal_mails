@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="h">
-      <change beforePath="$PROJECT_DIR$/resources/views/receipt/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/receipt/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myreceipt/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myreceipt/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +188,7 @@
       <workItem from="1606050750239" duration="1761000" />
       <workItem from="1606052638289" duration="46473000" />
       <workItem from="1606290222432" duration="13156000" />
-      <workItem from="1606375178648" duration="5392000" />
+      <workItem from="1606375178648" duration="5438000" />
     </task>
     <task id="LOCAL-00001" summary="h">
       <created>1606387740903</created>
@@ -218,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606396902776</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="h">
+      <created>1606397040134</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606397040134</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
