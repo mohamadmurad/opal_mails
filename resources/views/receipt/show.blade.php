@@ -115,7 +115,7 @@
                             <i class="fa fa-check-circle" style="color: green"></i>
                         @endif
 
-                        {{$receipt->manager->name}}
+                        {{$receipt->manager}}
                     </button>
                 </h2>
             </div>
