@@ -80,6 +80,7 @@ class ReceiptsController extends Controller
         $receipt = receipts::findOrFail($request['receipt_id']);
         $receipt->fill([
             'status' => 1,
+            'notes' => $request['notes'],
         ])->save();
 
         return redirect::route('receipt.show', $request['receipt_id']);
@@ -105,6 +106,7 @@ class ReceiptsController extends Controller
         $receipt = receipts::findOrFail($request['receipt_id']);
         $receipt->fill([
             'status' => 0,
+            'notes' => $request['notes'],
         ])->save();
 
 
