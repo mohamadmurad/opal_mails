@@ -20,6 +20,7 @@
 <form action="{{route('receipt.index')}}" method="get">
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
+            <strong>التاريخ:</strong>
             <input class="form-control " type="date" name="date" placeholder="التاريخ" />
         </div>
 
@@ -207,7 +208,8 @@
 <script>
     import Input from "@/Jetstream/Input";
     import Button from "@/Jetstream/Button";
+    import Label from "@/Jetstream/Label";
     export default {
-        components: {Button, Input}
+        components: {Label, Button, Input}
     }
 </script>
