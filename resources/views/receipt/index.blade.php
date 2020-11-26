@@ -17,10 +17,11 @@
         </div>
     @endif
 
-    <form action="{{route('receipt.index')}}" method="get">
-        <input type="date" name="date"/>
-        <input type="submit"  value="search"/>
-    </form>
+<form action="{{route('receipt.index')}}" method="get">
+    <input class="form-control" type="date" name="date"/>
+    <input class="btn btn-success" type="submit"  value="search"/>
+</form>
+<button><a href="{{route('receipt.index')}}">الكل</a></button>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
@@ -190,7 +191,8 @@
 @endsection
 <script>
     import Input from "@/Jetstream/Input";
+    import Button from "@/Jetstream/Button";
     export default {
-        components: {Input}
+        components: {Button, Input}
     }
 </script>
