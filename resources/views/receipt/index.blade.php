@@ -21,7 +21,7 @@
     <input class="form-control" type="date" name="date"/>
     <input class="btn btn-success" type="submit"  value="search"/>
 </form>
-<button><a href="{{route('receipt.index')}}">الكل</a></button>
+<button class="btn btn-primary"><a href="{{route('receipt.index')}}">الكل</a></button>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
