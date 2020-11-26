@@ -16,26 +16,26 @@ class CreateReceiptsStatusPivot extends Migration
         Schema::create('receipts_status', function (Blueprint $table) {
 
 
-            $table->id();
-
-            $table->boolean('status')->default(0);
-            $table->text('notes')->nullable();
-
-
-            $table->foreignId('receipts_id');
-            $table->foreign('receipts_id')
-                ->on('receipts')
-                ->references('id')
-                ->onDelete('CASCADE');
-
-
-            $table->foreignId('user_id')->nullable();
-            $table->foreign('user_id')->onDelete('set null')
-                ->on('users')
-                ->references('id');
-
-
-            $table->timestamps();
+//            $table->id();
+//
+//            $table->boolean('status')->default(0);
+//            $table->text('notes')->nullable();
+//
+//
+//            $table->foreignId('receipts_id');
+//            $table->foreign('receipts_id')
+//                ->on('receipts')
+//                ->references('id')
+//                ->onDelete('CASCADE');
+//
+//
+//            $table->foreignId('user_id')->nullable();
+//            $table->foreign('user_id')->onDelete('set null')
+//                ->on('users')
+//                ->references('id');
+//
+//
+//            $table->timestamps();
         });
     }
 

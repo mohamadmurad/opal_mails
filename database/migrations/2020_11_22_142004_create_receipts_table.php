@@ -18,7 +18,7 @@ class CreateReceiptsTable extends Migration
             $table->string('recipient_name');
             $table->unsignedInteger('amount');
             $table->text('reason');
-            $table->boolean('status')->default(0);
+            $table->boolean('status')->default(0)->nullable();
 
 
             $table->foreignId('employee_id')->nullable();

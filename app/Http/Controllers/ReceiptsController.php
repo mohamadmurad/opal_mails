@@ -69,11 +69,13 @@ class ReceiptsController extends Controller
         ]);
 
 
-        $d = Auth::user()->receipts()->attach([Auth::id() => [
-            'notes' => $request['notes'],
-            'receipts_id' => $request['receipt_id'],
-            'status' => 1,
-        ]]);
+
+
+//        $d = Auth::user()->receipts()->attach([Auth::id() => [
+//            'notes' => $request['notes'],
+//            'receipts_id' => $request['receipt_id'],
+//            'status' => 1,
+//        ]]);
 
         $receipt = receipts::findOrFail($request['receipt_id']);
         $receipt->fill([
@@ -93,20 +95,17 @@ class ReceiptsController extends Controller
         ]);
 
 
-        $d = Auth::user()->receipts()->attach([Auth::id() => [
-            'notes' => $request['notes'],
-            'receipts_id' => $request['receipt_id'],
-            'status' => 0,
-        ]]);
+//        $d = Auth::user()->receipts()->attach([Auth::id() => [
+//            'notes' => $request['notes'],
+//            'receipts_id' => $request['receipt_id'],
+//            'status' => 0,
+//        ]]);
 
 
         $receipt = receipts::findOrFail($request['receipt_id']);
         $receipt->fill([
             'status' => 0,
         ])->save();
-
-
-
 
 
         return redirect::route('receipt.show', $request['receipt_id']);

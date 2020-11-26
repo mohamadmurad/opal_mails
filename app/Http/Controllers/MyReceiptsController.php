@@ -50,6 +50,7 @@ class MyReceiptsController extends Controller
                 'reason' => $request['reason'],
                 'employee_id' => Auth::id(),
                 'company_id' => $request['company_id'],
+                'status' =>null,
             ]);
 
             if($request->hasFile('files')){
