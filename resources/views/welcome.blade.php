@@ -21,7 +21,7 @@
 
 
 
-
+        <div class="text-center">
             @auth
                 @if(\Illuminate\Support\Facades\Auth::user()->isAdmin === 1)
                     <a href="{{route('receipt.index')}}"><button class="btn btn-dark">كل أوامر الدفع</button></a>
@@ -38,12 +38,5 @@
             @endauth
 
 
-
-
-
-<script>
-    import Button from "@/Jetstream/Button";
-    export default {
-        components: {Button}
-    }
-</script>
+        </div>
+@endsection
