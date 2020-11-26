@@ -29,7 +29,7 @@
         </tr>
         <?php $i = 0?>
         @foreach ($receipts as $receipt)
-            <tr>
+            <tr class="{{$receipt->status === 0 ? 'table-danger' : '' }}">
                 <td>{{ ++$i }}</td>
 
                 <td>{{ $receipt->recipient_name }}</td>
