@@ -50,7 +50,7 @@ class ReceiptsController extends Controller
 
 
     public function show(Request $request, receipts $receipt){
-         $receipt->load('company');
+         $receipt->load(['company','manager']);
         $obj = new I18N_Arabic('Numbers');
 
         $text = $obj->int2str($receipt->amount);
