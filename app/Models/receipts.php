@@ -16,6 +16,7 @@ class receipts extends Model
         'status',
         'employee_id',
         'company_id',
+        'manager_id',
     ];
 
 
