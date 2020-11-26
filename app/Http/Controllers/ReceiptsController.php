@@ -17,7 +17,7 @@ class ReceiptsController extends Controller
     public function index(Request  $request)
     {
 
-        if ($request->has('date')){
+        if ($request->has('date') && $request->get('date') !== null ){
             $receipts = receipts::whereDate('created_at',$request->get('date'))->paginate();
 
         }else{
