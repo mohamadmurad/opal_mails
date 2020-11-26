@@ -88,7 +88,7 @@
     @endforeach
 
 
-
+    @if($receipt->status === null)
     <button type="button" class="btn btn-primary" data-toggle="modal"
             data-target="#accept_modal" data-whatever="{{$receipt->id}}">
         موافقة
@@ -98,7 +98,7 @@
             data-target="#refuse_modal" data-whatever="{{$receipt->id}}">
         رفض
     </button>
-
+    @endif
 
     @if($receipt->status !== null)
     <div class="accordion mt-lg-5" id="accordionExample">
