@@ -100,7 +100,7 @@
     </button>
 
 
-
+    @if($receipt->status !== null)
     <div class="accordion mt-lg-5" id="accordionExample">
 
 
@@ -134,6 +134,8 @@
 
 
     </div>
+
+    @endif
 
 
 
