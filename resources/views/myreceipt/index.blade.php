@@ -54,7 +54,7 @@
 
                 <td>
                     <a class="btn btn-success" href="{{ route('MyReceipt.show',$receipt->id) }}">تفاصيل</a>
-                    @if($receipt->status === 0)
+                    @if($receipt->status === null)
                         <div class="btn-group" role="group">
                             <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
