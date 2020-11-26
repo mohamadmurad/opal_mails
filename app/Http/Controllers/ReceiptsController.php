@@ -81,6 +81,7 @@ class ReceiptsController extends Controller
         $receipt->fill([
             'status' => 1,
             'notes' => $request['notes'],
+            'manager_id' => Auth::id(),
         ])->save();
 
         return redirect::route('receipt.show', $request['receipt_id']);
@@ -107,6 +108,7 @@ class ReceiptsController extends Controller
         $receipt->fill([
             'status' => 0,
             'notes' => $request['notes'],
+            'manager_id' => Auth::id(),
         ])->save();
 
 

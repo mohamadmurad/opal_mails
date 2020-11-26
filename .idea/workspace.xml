@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="h">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/receipts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +188,7 @@
       <workItem from="1606050750239" duration="1761000" />
       <workItem from="1606052638289" duration="46473000" />
       <workItem from="1606290222432" duration="13156000" />
-      <workItem from="1606375178648" duration="7404000" />
+      <workItem from="1606375178648" duration="7506000" />
     </task>
     <task id="LOCAL-00001" summary="h">
       <created>1606387740903</created>
@@ -318,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606398995570</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="h">
+      <created>1606399070210</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1606399070210</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +345,10 @@
     <state x="450" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606302591428" />
     <state x="450" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.860/-1280.0.1024.779@0.0.1440.860" timestamp="1606132355202" />
     <state x="450" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.860/-1280.0.1280.984@0.0.1440.860" timestamp="1606135240988" />
+    <state x="500" y="190" key="FileChooserDialogImpl" timestamp="1606399147436">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state x="500" y="190" key="FileChooserDialogImpl/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606399147436" />
     <state x="585" y="333" key="Github.ShareDialog" timestamp="1606378009542">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
@@ -348,10 +357,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="168" key="Vcs.Push.Dialog.v2" timestamp="1606398998034">
+    <state x="312" y="168" key="Vcs.Push.Dialog.v2" timestamp="1606399074241">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606398998034" />
+    <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606399074241" />
     <state x="92" y="92" width="1256" height="676" key="dock-window-1" timestamp="1606118076338">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
