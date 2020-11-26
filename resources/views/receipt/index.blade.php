@@ -35,6 +35,15 @@
                 <td>{{ $receipt->recipient_name }}</td>
                 <td>{{ $receipt->amount }}</td>
                 <td>{{ $receipt->company->name }}</td>
+                <td>
+                    @if($receipt->status === 1)
+                        تم القبول
+                        @elseif($receipt->status === 0)
+                        تم الرفض
+                    @else
+                        في الانظار
+                    @endif
+                </td>
                 <td>{{ $receipt->employee->name }}</td>
 
 
