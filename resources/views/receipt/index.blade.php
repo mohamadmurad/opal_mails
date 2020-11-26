@@ -35,15 +35,21 @@
                 <td>{{ $receipt->recipient_name }}</td>
                 <td>{{ $receipt->amount }}</td>
                 <td>{{ $receipt->company->name }}</td>
-                <td>
+
                     @if($receipt->status === 1)
+                    <td style="color: forestgreen">
                         تم القبول
+                    </td>
                         @elseif($receipt->status === 0)
+                    <td style="color: red">
                         تم الرفض
+                    </td>
                     @else
+                    <td >
                         في الانظار
+                    </td>
                     @endif
-                </td>
+
                 <td>{{ $receipt->employee->name }}</td>
 
 
