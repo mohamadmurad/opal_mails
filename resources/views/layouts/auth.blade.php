@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('fontawesome/css/all.css') }}">
 
+    <link rel="shortcut icon" href="{{ URL::asset('img/fav.ico') }}">
     <!-- Scripts -->
     <script src="{{ URL::asset('js/jquery-3.5.1.min.js') }}"></script>
     <script src="{{ mix('js/app.js') }}" defer></script>
