@@ -37,6 +37,8 @@
 
     </form>
 
+
+    @if(count($receipts) > 0)
     <div class="table-responsive">
         <table class="table table-bordered table-hover">
             <tr>
@@ -118,6 +120,14 @@
             @endforeach
         </table>
     </div>
+
+    @else
+        <div class="text-center">
+            <i class="fa fa-search"></i>
+
+            <h5>لا يوجد نتائج</h5>
+        </div>
+    @endif
     <div class="d-flex justify-content-center">
         {!! $receipts->links() !!}
     </div>

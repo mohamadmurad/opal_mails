@@ -23,9 +23,17 @@ include 'ar/Arabic.php';
 
 class MyReceiptsController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $receipts = receipts::with('employee')->paginate();
+
+        if ($request->has('date') && $request->get('date') !== null ){
+
+            $receipts = receipts::whereDate('created_at',$request->get('date'))->paginate();
+
+        }else{
+            $receipts = receipts::orderBy('created_at','desc')->paginate();
+        }
+       // $receipts = receipts::with('employee')->paginate();
 
       //  dd($receipts);
 
