@@ -13,6 +13,14 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="shortcut icon" href="{{ URL::asset('img/fav.ico') }}">
+
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#862b91">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#862b91">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#862b91">
+
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
