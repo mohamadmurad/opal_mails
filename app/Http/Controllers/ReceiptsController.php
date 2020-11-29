@@ -32,6 +32,14 @@ class ReceiptsController extends Controller
         return view('receipt.index',compact('receipts'));
     }
 
+    public function all(){
+        $receipts = receipts::orderBy('created_at','desc')->get();
+
+        return response()->json(
+             $receipts
+        );
+    }
+
 
    /* public function create(){
 
