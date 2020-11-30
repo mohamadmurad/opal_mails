@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/all',[\App\Http\Controllers\ReceiptsController::class,'all']);
+Route::get('/receipt',[\App\Http\Controllers\api\ApiReceiptsController::class,'index']);
+

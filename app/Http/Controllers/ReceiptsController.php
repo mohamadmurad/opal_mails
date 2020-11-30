@@ -33,7 +33,7 @@ class ReceiptsController extends Controller
     }
 
     public function all(){
-        $receipts = receipts::orderBy('created_at','desc')->get();
+        $receipts = receipts::orderBy('created_at','desc')->with('employee')->get();
 
         return response()->json(
              $receipts

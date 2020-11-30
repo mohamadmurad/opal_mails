@@ -20,8 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/CompanyResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/EmployeeResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo/opal.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,27 +174,35 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1keAah69SJYkwu4I7B5GL6Ih805" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/api" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\storage\app" />
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\storage\app\public" />
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\Controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\api" />
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\public\img" />
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Models" />
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\public" />
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\public\js" />
-      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\Middleware" />
     </key>
   </component>
   <component name="RunManager">
@@ -212,6 +226,9 @@
       <workItem from="1606551348178" duration="1064000" />
       <workItem from="1606561414933" duration="5625000" />
       <workItem from="1606639753379" duration="1867000" />
+      <workItem from="1606645808351" duration="329000" />
+      <workItem from="1606649182566" duration="1285000" />
+      <workItem from="1606721319990" duration="9262000" />
     </task>
     <task id="LOCAL-00001" summary="h">
       <created>1606387740903</created>
@@ -535,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606563704383</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="dr">
+      <created>1606645879989</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1606645879989</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,6 +578,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="h" />
     <MESSAGE value="dr" />
     <option name="LAST_COMMIT_MESSAGE" value="dr" />
@@ -570,9 +595,10 @@
     <state x="450" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606302591428" />
     <state x="450" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.860/-1280.0.1024.779@0.0.1440.860" timestamp="1606132355202" />
     <state x="450" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.860/-1280.0.1280.984@0.0.1440.860" timestamp="1606135240988" />
-    <state x="500" y="190" key="FileChooserDialogImpl" timestamp="1606399147436">
-      <screen x="0" y="0" width="1440" height="870" />
+    <state x="500" y="188" key="FileChooserDialogImpl" timestamp="1606723885425">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
+    <state x="500" y="188" key="FileChooserDialogImpl/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1606723885425" />
     <state x="500" y="190" key="FileChooserDialogImpl/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606399147436" />
     <state x="585" y="333" key="Github.ShareDialog" timestamp="1606378009542">
       <screen x="0" y="0" width="1440" height="870" />
@@ -582,10 +608,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1606563706733">
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1606645883694">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1606563706733" />
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1606645883694" />
     <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606403856276" />
     <state x="92" y="92" width="1256" height="676" key="dock-window-1" timestamp="1606118076338">
       <screen x="0" y="0" width="1440" height="860" />
