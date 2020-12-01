@@ -27,7 +27,7 @@ class ReceiptsResource extends JsonResource
             'amount' => $this->amount,
            // 'amountText' => $amountText,
             'reason' => $this->reason,
-            'status' => $this->status,
+            'status' => (boolean)$this->status,
             'employee' => new EmployeeResource($this->whenLoaded('employee')),
             'company' => new CompanyResource($this->whenLoaded('company')),
             'manager' => new EmployeeResource($this->whenLoaded('manager')),
