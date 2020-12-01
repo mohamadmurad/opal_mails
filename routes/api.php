@@ -24,3 +24,6 @@ Route::get('/receipt',[\App\Http\Controllers\api\ApiReceiptsController::class,'i
 
 Route::get('/receipt/{receipt}',[\App\Http\Controllers\api\ApiReceiptsController::class,'show']);
 
+Route::post('/receipt/accept',[\App\Http\Controllers\api\ApiReceiptsController::class,'accept']);
+Route::post('/receipt/refuse',[\App\Http\Controllers\api\ApiReceiptsController::class,'refuse']);
+

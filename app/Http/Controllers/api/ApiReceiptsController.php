@@ -54,15 +54,19 @@ class ApiReceiptsController extends Controller
 //            'receipts_id' => $request['receipt_id'],
 //            'status' => 1,
 //        ]]);
-
+        //$data = $request->json();
         $receipt = receipts::findOrFail($request['receipt_id']);
         $receipt->fill([
             'status' => 1,
             'notes' => $request['notes'],
-            'manager_id' => Auth::id(),
+            'manager_id' => 2,
         ])->save();
 
-        return redirect::route('receipt.show', $request['receipt_id']);
+        return response()->json([
+            'data' => true,
+            'code' => 200,
+        ]);
+        //return redirect::route('receipt.show', $data['receipt_id']);
 
     }
 
@@ -86,11 +90,15 @@ class ApiReceiptsController extends Controller
         $receipt->fill([
             'status' => 0,
             'notes' => $request['notes'],
-            'manager_id' => Auth::id(),
+            'manager_id' =>2,
         ])->save();
 
 
-        return redirect::route('receipt.show', $request['receipt_id']);
+        return response()->json([
+            'data' => true,
+            'code' => 200,
+        ]);
+       // return redirect::route('receipt.show', $request['receipt_id']);
 
     }
 
