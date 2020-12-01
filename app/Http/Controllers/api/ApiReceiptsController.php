@@ -4,10 +4,10 @@ namespace App\Http\Controllers\api;
 
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ReceiptsResource;
 use App\Models\receipts;
 
 
-use I18N_Arabic;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -28,20 +28,15 @@ class ApiReceiptsController extends Controller
 
         $receipts->load(['employee','manager','company']);
 
-        return \App\Http\Resources\ReceiptsResource::collection($receipts);
+        return ReceiptsResource::collection($receipts);
 
     }
 
     public function show(Request $request, receipts $receipt){
-         $receipt->load(['company','manager']);
-      //  $obj = new I18N_Arabic('Numbers');
+         $receipt->load(['employee','manager','company']);
 
-       // $text = $obj->int2str($receipt->amount);
+        return new ReceiptsResource($receipt);
 
-
-
-
-        //return view('receipt.show',compact('receipt','text'));
     }
 
     public function accept(Request $request){

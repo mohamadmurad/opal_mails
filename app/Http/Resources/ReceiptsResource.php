@@ -2,7 +2,10 @@
 
 namespace App\Http\Resources;
 
+
+
 use Illuminate\Http\Resources\Json\JsonResource;
+
 
 class ReceiptsResource extends JsonResource
 {
@@ -14,11 +17,15 @@ class ReceiptsResource extends JsonResource
      */
     public function toArray($request)
     {
+       // $obj = new I18N_Arabic('Numbers');
+
+       // $amountText = $obj->int2str($this->amount);
         return [
 
             'id' => $this->id,
             'recipient_name' => $this->recipient_name,
             'amount' => $this->amount,
+           // 'amountText' => $amountText,
             'reason' => $this->reason,
             'status' => $this->status,
             'employee' => new EmployeeResource($this->whenLoaded('employee')),

@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/CompanyResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/EmployeeResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/logo/opal.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -228,7 +224,8 @@
       <workItem from="1606639753379" duration="1867000" />
       <workItem from="1606645808351" duration="329000" />
       <workItem from="1606649182566" duration="1285000" />
-      <workItem from="1606721319990" duration="9262000" />
+      <workItem from="1606721319990" duration="13073000" />
+      <workItem from="1606813793644" duration="737000" />
     </task>
     <task id="LOCAL-00001" summary="h">
       <created>1606387740903</created>
@@ -559,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606645879989</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="dr">
+      <created>1606742957107</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1606742957107</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,14 +612,25 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1606645883694">
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1606742980816">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1606645883694" />
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1606742980816" />
     <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606403856276" />
     <state x="92" y="92" width="1256" height="676" key="dock-window-1" timestamp="1606118076338">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="92" y="92" width="1256" height="676" key="dock-window-1/0.0.1440.860/-1280.0.1024.779@0.0.1440.860" timestamp="1606118076338" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
