@@ -24,8 +24,8 @@ class EmployeeResource extends JsonResource
                 "company_id" => $this->company_id,
                 "isManager" => $this->isManager,
                 "isAdmin" => (boolean)$this->isAdmin,
-                "created_at" => $this->created_at->format('Y-m-d H:m'),
-                "updated_at" => $this->updated_at->format('Y-m-d H:m'),
+                "created_at" => $this->created_at,
+                "updated_at" => $this->updated_at,
                // "profile_photo_url" => $this->"https://ui-avatars.com/api/?name=Souad&color=7F9CF5&background=EBF4FF"
         ];
     }

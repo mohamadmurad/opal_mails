@@ -32,8 +32,8 @@ class ReceiptsResource extends JsonResource
             'company' => new CompanyResource($this->whenLoaded('company')),
             'manager' => new EmployeeResource($this->whenLoaded('manager')),
             'notes' => $this->notes,
-            'created_at' => $this->created_at->format('Y-m-d H:m'),
-            'updated_at' => $this->updated_at->format('Y-m-d H:m'),
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }
