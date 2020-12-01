@@ -22,7 +22,7 @@ class EmployeeResource extends JsonResource
                // "current_team_id" => $this->null,
                 //"profile_photo_path" => $this->null,
                 "company_id" => $this->company_id,
-                "isManager" => $this->isManager,
+                "isManager" => (boolean)$this->isManager,
                 "isAdmin" => (boolean)$this->isAdmin,
                 "created_at" => $this->created_at->format('Y-m-d h:m'),
                 "updated_at" => $this->updated_at->format('Y-m-d h:m'),
