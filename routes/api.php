@@ -19,11 +19,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/receipt',[\App\Http\Controllers\api\ApiReceiptsController::class,'index']);
+Route::post('/login', [\App\Http\Controllers\api\AuthApiController::class,'login']);
+
+Route::get('/receipt',[\App\Http\Controllers\api\ApiReceiptsController::class,'index'])->middleware('auth:api');
 
 
-Route::get('/receipt/{receipt}',[\App\Http\Controllers\api\ApiReceiptsController::class,'show']);
+Route::get('/receipt/{receipt}',[\App\Http\Controllers\api\ApiReceiptsController::class,'show'])->middleware('auth:api');
 
-Route::post('/receipt/accept',[\App\Http\Controllers\api\ApiReceiptsController::class,'accept']);
-Route::post('/receipt/refuse',[\App\Http\Controllers\api\ApiReceiptsController::class,'refuse']);
+Route::post('/receipt/accept',[\App\Http\Controllers\api\ApiReceiptsController::class,'accept'])->middleware('auth:api');
+Route::post('/receipt/refuse',[\App\Http\Controllers\api\ApiReceiptsController::class,'refuse'])->middleware('auth:api');
 

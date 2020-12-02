@@ -55,12 +55,14 @@ class ApiReceiptsController extends Controller
 //            'status' => 1,
 //        ]]);
         //$data = $request->json();
+
         $receipt = receipts::findOrFail($request['receipt_id']);
         $receipt->fill([
             'status' => 1,
             'notes' => $request['notes'],
             'manager_id' => 2,
         ])->save();
+
 
         return response()->json([
             'data' => true,
