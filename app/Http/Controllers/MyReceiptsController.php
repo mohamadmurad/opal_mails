@@ -52,9 +52,14 @@ class MyReceiptsController extends Controller
         $filesX = [];
         DB::beginTransaction();
         try {
+            $obj = new I18N_Arabic('Numbers');
+
+            $text = $obj->int2str($request['amount']);
+
             $receipt = receipts::create([
                 'recipient_name' => $request['recipient_name'],
                 'amount' => $request['amount'],
+                'amountText' => $text,
                 'reason' => $request['reason'],
                 'employee_id' => Auth::id(),
                 'company_id' => $request['company_id'],

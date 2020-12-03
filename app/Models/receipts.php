@@ -14,6 +14,7 @@ class receipts extends Model
     protected $fillable  = [
         'recipient_name',
         'amount',
+        'amountText',
         'reason',
         'status',
         'employee_id',
