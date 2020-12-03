@@ -5,6 +5,7 @@ namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\FcmController;
+use App\Http\Resources\EmployeeResource;
 use App\Http\Resources\ReceiptsResource;
 use App\Models\receipts;
 
@@ -134,6 +135,15 @@ class ApiReceiptsController extends Controller
             'code' => 200,
         ]);
         // return redirect::route('receipt.show', $request['receipt_id']);
+
+    }
+
+    public function myInfo(Request $request){
+
+
+
+     return  new EmployeeResource(Auth::user());
+
 
     }
 

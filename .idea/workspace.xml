@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_27_000000_alter_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyReceiptsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/receipts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,14 +250,8 @@
       <workItem from="1606993237830" duration="410000" />
       <workItem from="1606996351390" duration="211000" />
       <workItem from="1606997116493" duration="226000" />
-      <workItem from="1606997739421" duration="247000" />
-    </task>
-    <task id="LOCAL-00011" summary="h">
-      <created>1606398306832</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1606398306832</updated>
+      <workItem from="1606997739421" duration="427000" />
+      <workItem from="1607003553996" duration="258000" />
     </task>
     <task id="LOCAL-00012" summary="h">
       <created>1606398564356</created>
@@ -597,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606997240571</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="dr">
+      <created>1606998085389</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1606998085390</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,10 +649,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1606997249483">
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1606998094900">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1606997249483" />
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1606998094900" />
     <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606403856276" />
     <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606814617796">
       <screen x="0" y="0" width="1440" height="860" />
