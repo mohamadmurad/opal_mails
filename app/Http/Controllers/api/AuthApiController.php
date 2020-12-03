@@ -77,7 +77,7 @@ class AuthApiController extends Controller
 
      //   dd(Auth::user());
         $user = User::where('id','=',Auth::user()->id)->first();
-    dd($user);
+
         return  new EmployeeResource($user);
 
 
