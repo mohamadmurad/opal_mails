@@ -43,8 +43,8 @@ class receipts extends Model
         static::created(function ($receipts ){
             $title ="هناك امر دفع جديد لـ :" .  $receipts->recipient_name;
             $body = "المبلغ  : " .  $receipts->amount . "\n من قبل الموظف : " .$receipts->employee->name
-            . "\n وذلك لقاء : " ;
-            $icon =null;
+            . "\n وذلك لقاء : " . $receipts->reason;
+            $icon = asset('logo/'.$receipts->company->logo);
             $data = $receipts;
             $auth_id = 1;
             $device_token = DB::table('users')->where('isManager','=',1)->where('fcm_token','!=','')->pluck('fcm_token')->toArray();
