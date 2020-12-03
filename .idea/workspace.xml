@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/AuthApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/AuthApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,14 +251,7 @@
       <workItem from="1606997739421" duration="427000" />
       <workItem from="1607003553996" duration="258000" />
       <workItem from="1607006152450" duration="117000" />
-      <workItem from="1607006402043" duration="129000" />
-    </task>
-    <task id="LOCAL-00014" summary="h">
-      <created>1606398684650</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1606398684650</updated>
+      <workItem from="1607006402043" duration="144000" />
     </task>
     <task id="LOCAL-00015" summary="h">
       <created>1606398774431</created>
@@ -598,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607006426180</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="dr">
+      <created>1607006540816</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1607006540816</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
