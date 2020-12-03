@@ -7,8 +7,9 @@ use App\Http\Controllers\Controller;
 
 
 use App\Http\Resources\EmployeeResource;
+use App\Models\User;
 use App\Traits\ApiResponser;
-use http\Client\Curl\User;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Fortify\Http\Requests\LoginRequest;
