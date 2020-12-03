@@ -69,7 +69,7 @@
                             </td>
                         @else
                             <td>
-                                في الانظار
+                                في الانتظار
                             </td>
                         @endif
                         <td>{{ $receipt->employee->name }}</td>
