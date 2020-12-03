@@ -31,5 +31,5 @@ Route::post('/receipt/refuse',[\App\Http\Controllers\api\ApiReceiptsController::
 Route::post('/receipt/fcm',[\App\Http\Controllers\api\ApiReceiptsController::class,'fcm'])->middleware('auth:api');
 
 
-Route::get('/myInfo',[\App\Http\Controllers\api\AuthApiController::class,'myInfo']);
+Route::get('/myInfo',[\App\Http\Controllers\api\AuthApiController::class,'myInfo'])->middleware('auth:api');
 
