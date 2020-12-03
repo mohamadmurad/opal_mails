@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\receipts;
+use App\Observers\ReceiptsObserver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        //receipts::observe(ReceiptsObserver::class);
     }
 
     /**

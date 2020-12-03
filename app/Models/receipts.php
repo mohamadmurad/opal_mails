@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
+use App\Http\Controllers\FcmController;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class receipts extends Model
@@ -34,6 +36,22 @@ class receipts extends Model
 
             }
 
+
+
+        });
+
+        static::created(function ($receipts ){
+            $title ="هناك امر دفع جديد لـ :" .  $receipts->recipient_name;
+            $body = "المبلغ  : " .  $receipts->amount . "\n من قبل الموظف : " .$receipts->employee->name
+            . "\n وذلك لقاء : " ;
+            $icon =null;
+            $data = $receipts;
+            $auth_id = 1;
+            $device_token = DB::table('users')->where('isManager','=',1)->where('fcm_token','!=','')->pluck('fcm_token')->toArray();
+            if (count($device_token)>0){
+                $ob = new FcmController();
+                $result = $ob->sendTo($data,$device_token,$title,$body,$icon);
+            }
 
 
         });

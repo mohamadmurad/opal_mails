@@ -30,6 +30,7 @@ class User extends Authenticatable
         'isManager',
         'isAdmin',
         'company_id',
+        'fcm_token',
     ];
 
     /**
