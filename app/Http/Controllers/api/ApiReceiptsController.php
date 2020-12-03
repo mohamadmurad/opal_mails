@@ -4,12 +4,15 @@ namespace App\Http\Controllers\api;
 
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\FcmController;
 use App\Http\Resources\ReceiptsResource;
 use App\Models\receipts;
 
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 
 
@@ -60,7 +63,7 @@ class ApiReceiptsController extends Controller
         $receipt->fill([
             'status' => 1,
             'notes' => $request['notes'],
-            'manager_id' => 2,
+            'manager_id' => Auth::user()->id,
         ])->save();
 
 
@@ -92,7 +95,7 @@ class ApiReceiptsController extends Controller
         $receipt->fill([
             'status' => 0,
             'notes' => $request['notes'],
-            'manager_id' =>2,
+            'manager_id' =>Auth::user()->id,
         ])->save();
 
 
@@ -101,6 +104,36 @@ class ApiReceiptsController extends Controller
             'code' => 200,
         ]);
        // return redirect::route('receipt.show', $request['receipt_id']);
+
+    }
+
+
+    public function fcm(Request $request){
+
+        $user = User::where('id','=',Auth::user()->id)->first();
+
+        $user->fill([
+            'fcm_token' => $request['fcm'],
+        ])->save();
+
+        $title ="اهلا بك " . $user->name;
+        $body = "اهلا بك";
+
+        $icon =null;
+        $data = null;
+        $auth_id = Auth::user()->id;
+        $device_token = DB::table('users')->where('isManager','=',1)->where('fcm_token','!=','')->pluck('fcm_token')->toArray();
+
+        if (count($device_token)>0){
+            $ob = new FcmController();
+            $result = $ob->sendTo($data,$device_token,$title,$body,$icon);
+        }
+
+        return response()->json([
+            'data' => true,
+            'code' => 200,
+        ]);
+        // return redirect::route('receipt.show', $request['receipt_id']);
 
     }
 
