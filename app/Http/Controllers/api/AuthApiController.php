@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 
 use App\Http\Resources\EmployeeResource;
 use App\Traits\ApiResponser;
+use http\Client\Curl\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Fortify\Http\Requests\LoginRequest;
@@ -74,7 +75,9 @@ class AuthApiController extends Controller
     public function myInfo(Request $request){
 
      //   dd(Auth::user());
-        return  new EmployeeResource(Auth::user());
+        $user = User::where('id','=',Auth::user()->id)->first();
+
+        return  new EmployeeResource(Auth::user($user));
 
 
     }
