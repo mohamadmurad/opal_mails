@@ -73,7 +73,7 @@ class AuthApiController extends Controller
 
     public function myInfo(Request $request){
 
-        dd(Auth::user());
+     //   dd(Auth::user());
         return  new EmployeeResource(Auth::user());
 
 
