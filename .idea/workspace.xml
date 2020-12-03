@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr" />
+    <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/AuthApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/AuthApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -249,13 +253,7 @@
       <workItem from="1606997739421" duration="427000" />
       <workItem from="1607003553996" duration="258000" />
       <workItem from="1607006152450" duration="117000" />
-    </task>
-    <task id="LOCAL-00013" summary="h">
-      <created>1606398619764</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1606398619764</updated>
+      <workItem from="1607006402043" duration="129000" />
     </task>
     <task id="LOCAL-00014" summary="h">
       <created>1606398684650</created>
@@ -593,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607006252277</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="dr">
+      <created>1607006426180</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1607006426180</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,10 +627,10 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="414" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1606204864684" />
-    <state x="450" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606993545520">
+    <state x="450" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607006526058">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="450" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1606993545520" />
+    <state x="450" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607006526058" />
     <state x="450" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606302591428" />
     <state x="450" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.860/-1280.0.1024.779@0.0.1440.860" timestamp="1606132355202" />
     <state x="450" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.860/-1280.0.1280.984@0.0.1440.860" timestamp="1606135240988" />
@@ -646,10 +651,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1607006258104">
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1607006429041">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607006258104" />
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607006429041" />
     <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606403856276" />
     <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606814617796">
       <screen x="0" y="0" width="1440" height="860" />

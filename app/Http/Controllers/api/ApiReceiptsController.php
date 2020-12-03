@@ -138,14 +138,6 @@ class ApiReceiptsController extends Controller
 
     }
 
-    public function myInfo(Request $request){
-
-
-
-     return  new EmployeeResource(Auth::user());
-
-
-    }
 
 
 }

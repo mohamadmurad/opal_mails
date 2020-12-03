@@ -6,6 +6,7 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 
 
+use App\Http\Resources\EmployeeResource;
 use App\Traits\ApiResponser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -65,6 +66,15 @@ class AuthApiController extends Controller
         $content = json_decode(app()->handle($r)->getContent());
 
         return $this->successResponse($content,200);
+
+    }
+
+
+
+    public function myInfo(Request $request){
+
+        return  new EmployeeResource(Auth::user());
+
 
     }
 
