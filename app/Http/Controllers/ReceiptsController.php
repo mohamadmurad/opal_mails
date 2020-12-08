@@ -91,6 +91,7 @@ class ReceiptsController extends Controller
 //            'status' => 1,
 //        ]]);
 
+
         $receipt = receipts::findOrFail($request['receipt_id']);
         $receipt->fill([
             'status' => 1,

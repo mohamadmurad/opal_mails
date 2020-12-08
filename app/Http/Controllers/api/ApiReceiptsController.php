@@ -60,12 +60,17 @@ class ApiReceiptsController extends Controller
 //        ]]);
         //$data = $request->json();
 
-        $receipt = receipts::findOrFail($request['receipt_id']);
-        $receipt->fill([
-            'status' => 1,
-            'notes' => $request['notes'],
-            'manager_id' => Auth::user()->id,
-        ])->save();
+        if(Auth::user()->isManager === 1){
+
+            $receipt = receipts::findOrFail($request['receipt_id']);
+            $receipt->fill([
+                'status' => 1,
+                'notes' => $request['notes'],
+                'manager_id' => Auth::user()->id,
+            ])->save();
+
+        }
+
 
 
         return response()->json([
@@ -91,13 +96,15 @@ class ApiReceiptsController extends Controller
 //            'status' => 0,
 //        ]]);
 
+        if(Auth::user()->isManager === 1){
+            $receipt = receipts::findOrFail($request['receipt_id']);
+            $receipt->fill([
+                'status' => 0,
+                'notes' => $request['notes'],
+                'manager_id' =>Auth::user()->id,
+            ])->save();
+        }
 
-        $receipt = receipts::findOrFail($request['receipt_id']);
-        $receipt->fill([
-            'status' => 0,
-            'notes' => $request['notes'],
-            'manager_id' =>Auth::user()->id,
-        ])->save();
 
 
         return response()->json([

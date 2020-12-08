@@ -23,7 +23,8 @@
       <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_1.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/receipts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,14 +259,9 @@
       <workItem from="1607177874604" duration="165000" />
       <workItem from="1607327349966" duration="3596000" />
       <workItem from="1607423792884" duration="1621000" />
-      <workItem from="1607432109867" duration="141000" />
-    </task>
-    <task id="LOCAL-00024" summary="h">
-      <created>1606399756550</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1606399756550</updated>
+      <workItem from="1607432109867" duration="308000" />
+      <workItem from="1607432491911" duration="319000" />
+      <workItem from="1607438658572" duration="581000" />
     </task>
     <task id="LOCAL-00025" summary="h">
       <created>1606399768566</created>
@@ -603,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607431735917</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="dr">
+      <created>1607432275802</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1607432275802</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,10 +659,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1607431783738">
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1607432278493">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607431783738" />
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607432278493" />
     <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606403856276" />
     <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606814617796">
       <screen x="0" y="0" width="1440" height="860" />
