@@ -48,7 +48,8 @@ class receipts extends Model
             $icon = asset('logo/'.$receipts->company->logo);
             $data = $receipts;
             $auth_id = 1;
-            $device_token = DB::table('users')->where('isManager','=',1)->where('fcm_token','!=','')->pluck('fcm_token')->toArray();
+            $device_token = DB::table('users')->where('isManager','=',1)->
+                orWhere('isAdmin','=',1)->where('fcm_token','!=','')->pluck('fcm_token')->toArray();
             if (count($device_token)>0){
                 $ob = new FcmController();
                 $result = $ob->sendTo($data,$device_token,$title,$body,$icon);

@@ -20,15 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr">
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/FilesResource.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_1.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyReceiptsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myreceipt/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myreceipt/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/receipts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,14 +257,8 @@
       <workItem from="1607006402043" duration="685000" />
       <workItem from="1607177874604" duration="165000" />
       <workItem from="1607327349966" duration="3596000" />
-      <workItem from="1607423792884" duration="1348000" />
-    </task>
-    <task id="LOCAL-00023" summary="h">
-      <created>1606399700599</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1606399700599</updated>
+      <workItem from="1607423792884" duration="1621000" />
+      <workItem from="1607432109867" duration="141000" />
     </task>
     <task id="LOCAL-00024" summary="h">
       <created>1606399756550</created>
@@ -607,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607007062909</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="dr">
+      <created>1607431735916</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1607431735917</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,10 +656,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1607007064774">
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1607431783738">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607007064774" />
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607431783738" />
     <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606403856276" />
     <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606814617796">
       <screen x="0" y="0" width="1440" height="860" />
