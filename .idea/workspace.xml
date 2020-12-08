@@ -20,8 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr">
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/FilesResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/AuthApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/AuthApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyReceiptsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ReceiptsResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myreceipt/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myreceipt/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,22 +202,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\storage\app" />
-      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\storage\app\public" />
-      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\Controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\Resources" />
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\database\migrations" />
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\api" />
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\public\img" />
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Models" />
-      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\storage\app" />
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\storage\app\public" />
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\Controllers" />
     </key>
   </component>
   <component name="RunManager">
@@ -252,21 +259,10 @@
       <workItem from="1606997739421" duration="427000" />
       <workItem from="1607003553996" duration="258000" />
       <workItem from="1607006152450" duration="117000" />
-      <workItem from="1607006402043" duration="602000" />
-    </task>
-    <task id="LOCAL-00021" summary="h">
-      <created>1606399466429</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1606399466429</updated>
-    </task>
-    <task id="LOCAL-00022" summary="h">
-      <created>1606399641855</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1606399641855</updated>
+      <workItem from="1607006402043" duration="685000" />
+      <workItem from="1607177874604" duration="165000" />
+      <workItem from="1607327349966" duration="3596000" />
+      <workItem from="1607423792884" duration="1348000" />
     </task>
     <task id="LOCAL-00023" summary="h">
       <created>1606399700599</created>
@@ -597,7 +593,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607006959455</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="dr">
+      <created>1607007016448</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1607007016448</updated>
+    </task>
+    <task id="LOCAL-00071" summary="dr">
+      <created>1607007062909</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1607007062909</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,10 +660,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1607006961283">
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1607007064774">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607006961283" />
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607007064774" />
     <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606403856276" />
     <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606814617796">
       <screen x="0" y="0" width="1440" height="860" />

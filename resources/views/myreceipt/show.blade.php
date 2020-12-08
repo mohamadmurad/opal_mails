@@ -96,7 +96,7 @@
                     <div class="">
                         <i class="fa fa-file-pdf"></i>
                         <p>{{$file->name}}</p>
-                        <a href="{{route('downloadFile',['id'=>$file->id])}}">
+                        <a href="{{route('downloadFile',['id'=>$file->id])}}" target="_blank">
                             <i class="fa fa-download"></i>
                         </a>
 

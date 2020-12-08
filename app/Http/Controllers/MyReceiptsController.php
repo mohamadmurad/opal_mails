@@ -7,6 +7,7 @@ use App\Models\Company;
 use App\Models\files;
 use App\Models\receipts;
 
+use Carbon\Carbon;
 use http\Exception;
 use I18N_Arabic;
 use Illuminate\Http\Request;
@@ -75,7 +76,7 @@ class MyReceiptsController extends Controller
 
                     $extension = $file->getClientOriginalExtension();
 
-                    $fileName = Str::slug( $request->get('recipient_name')) . '_' . $i++ . '.' .$extension;
+                    $fileName = Str::slug( $request->get('recipient_name')) . '_' . $i++ . Carbon::now(). '.' .$extension;
                     $dd= Storage::disk('files')->put($fileName,  File::get($file));
 
 

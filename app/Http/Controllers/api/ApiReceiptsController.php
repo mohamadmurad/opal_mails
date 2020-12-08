@@ -30,14 +30,14 @@ class ApiReceiptsController extends Controller
             $receipts = receipts::orderBy('created_at','desc')->paginate();
         }
 
-        $receipts->load(['employee','manager','company']);
+        $receipts->load(['employee','manager','company','files']);
 
         return ReceiptsResource::collection($receipts);
 
     }
 
     public function show(Request $request, receipts $receipt){
-         $receipt->load(['employee','manager','company']);
+         $receipt->load(['employee','manager','company','files']);
 
         return new ReceiptsResource($receipt);
 

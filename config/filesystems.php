@@ -95,6 +95,7 @@ return [
     'links' => [
         public_path('storage') => storage_path('app/public'),
         public_path('logo') => storage_path('app/logo'),
+        public_path('files') => storage_path('app/files'),
 
     ],
 

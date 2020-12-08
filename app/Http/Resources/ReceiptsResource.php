@@ -26,12 +26,13 @@ class ReceiptsResource extends JsonResource
             'amountText' => $this->amountText,
             'reason' => $this->reason,
             'status' => $this->status,
-            'employee' => new EmployeeResource($this->whenLoaded('employee')),
-            'company' => new CompanyResource($this->whenLoaded('company')),
-            'manager' => new EmployeeResource($this->whenLoaded('manager')),
             'notes' => $this->notes,
             'created_at' => $this->created_at->format('Y-m-d h:m'),
             'updated_at' => $this->updated_at->format('Y-m-d h:m'),
+            'employee' => new EmployeeResource($this->whenLoaded('employee')),
+            'company' => new CompanyResource($this->whenLoaded('company')),
+            'manager' => new EmployeeResource($this->whenLoaded('manager')),
+            'files' =>  FilesResource::collection($this->whenLoaded('files')),
         ];
     }
 }
