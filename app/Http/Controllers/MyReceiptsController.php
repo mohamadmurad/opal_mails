@@ -76,7 +76,7 @@ class MyReceiptsController extends Controller
 
                     $extension = $file->getClientOriginalExtension();
 
-                    $fileName = Str::slug( $request->get('recipient_name')) . '_' . $i++ . Hash::make($request->get('recipient_name')). '.' .$extension;
+                    $fileName = Str::slug( $request->get('recipient_name')) . '_' . $i++ .Str::slug( Carbon::now()) . '.' .$extension;
                     $dd= Storage::disk('files')->put($fileName,  File::get($file));
 
 
