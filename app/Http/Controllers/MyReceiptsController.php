@@ -196,6 +196,18 @@ class MyReceiptsController extends Controller
             'manager_id' => Auth::id(),
         ])->save();
 
+        $title ="تم قبول أمر دفع لـ  :" .  $receipt->recipient_name;
+        $body = "المبلغ  : " .  $receipt->amount . "\n من قبل المدير : " .$receipt->manager->name
+            . "\n وذلك لقاء : " . $receipt->reason;
+        $icon = asset('logo/'.$receipt->company->logo);
+        $data = $receipt;
+        $auth_id = 1;
+        $device_token = DB::table('users')->where('fcm_token','!=','')->pluck('fcm_token')->toArray();
+        if (count($device_token)>0){
+            $ob = new FcmController();
+            $result = $ob->sendTo($data,$device_token,$title,$body,$icon);
+        }
+
         return redirect::route('MyReceipt.show', $request['receipt_id']);
 
     }
@@ -222,6 +234,18 @@ class MyReceiptsController extends Controller
             'manager_id' => Auth::id(),
         ])->save();
 
+
+        $title ="تم رفض أمر دفع لـ  :" .  $receipt->recipient_name;
+        $body = "المبلغ  : " .  $receipt->amount . "\n من قبل المدير : " .$receipt->manager->name
+            . "\n وذلك لقاء : " . $receipt->reason;
+        $icon = asset('logo/'.$receipt->company->logo);
+        $data = $receipt;
+        $auth_id = 1;
+        $device_token = DB::table('users')->where('fcm_token','!=','')->pluck('fcm_token')->toArray();
+        if (count($device_token)>0){
+            $ob = new FcmController();
+            $result = $ob->sendTo($data,$device_token,$title,$body,$icon);
+        }
 
         return redirect::route('MyReceipt.show', $request['receipt_id']);
 
