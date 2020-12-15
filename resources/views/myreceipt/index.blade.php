@@ -77,26 +77,28 @@
 
                         <td>
                             <a class="btn btn-success" href="{{ route('MyReceipt.show',$receipt->id) }}">تفاصيل</a>
-                            @if($receipt->status === null)
-                                <div class="btn-group" role="group">
-                                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        خيارات
-                                    </button>
-                                    <div class="dropdown-menu text-right" aria-labelledby="btnGroupDrop1">
+                            @if(Auth::user()->isAdmin === 1 || Auth::user()->isManager !== 1)
+                                @if($receipt->status === null)
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            خيارات
+                                        </button>
+                                        <div class="dropdown-menu text-right" aria-labelledby="btnGroupDrop1">
 
-                                        <a class="dropdown-item"
-                                           href="{{ route('MyReceipt.edit',$receipt->id) }}">تعديل</a>
+                                            <a class="dropdown-item"
+                                               href="{{ route('MyReceipt.edit',$receipt->id) }}">تعديل</a>
 
-                                        <form action="{{ route('MyReceipt.destroy',$receipt->id) }}" method="POST">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="dropdown-item delete_btn">حذف</button>
-                                        </form>
+                                            <form action="{{ route('MyReceipt.destroy',$receipt->id) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="dropdown-item delete_btn">حذف</button>
+                                            </form>
 
 
+                                        </div>
                                     </div>
-                                </div>
+                                @endif
                             @endif
                         </td>
                     </tr>

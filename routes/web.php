@@ -39,9 +39,9 @@ Route::group(['middleware' => ['auth:sanctum']],function (){
 
 Route::group(['middleware' => ['auth:sanctum','isManager']],function (){
 
-    Route::resource('receipt',ReceiptsController::class);
-    Route::post('/accept',[ReceiptsController::class,'accept'])->name('accept');
-    Route::post('/refuse',[ReceiptsController::class,'refuse'])->name('refuse');
+    //Route::resource('receipt',ReceiptsController::class);
+    Route::post('/accept',[MyReceiptsController::class,'accept'])->name('accept');
+    Route::post('/refuse',[MyReceiptsController::class,'refuse'])->name('refuse');
 
 });
 

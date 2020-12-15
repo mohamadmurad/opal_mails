@@ -34,9 +34,8 @@ class MyReceiptsController extends Controller
         }else{
             $receipts = receipts::orderBy('created_at','desc')->paginate();
         }
-       // $receipts = receipts::with('employee')->paginate();
 
-      //  dd($receipts);
+        $receipts->load('employee');
 
         return view('myreceipt.index',compact('receipts'));
     }
@@ -121,8 +120,7 @@ class MyReceiptsController extends Controller
 
         $MyReceipt->load(['employee.company','manager']);
 
-       // $actions = $MyReceipt->manager[0];
-      //  dd($actions);
+
         $obj = new I18N_Arabic('Numbers');
 
         $text = $obj->int2str($MyReceipt->amount);
@@ -172,5 +170,60 @@ class MyReceiptsController extends Controller
         $MyReceipt->delete();
         return Redirect::route('MyReceipt.index')
             ->with('success','Receipt Deleted successfully.');
+    }
+
+    public function accept(Request $request){
+
+        $request->validate([
+            'receipt_id'=> 'required|exists:receipts,id',
+            'notes' => 'nullable',
+        ]);
+
+
+
+
+//        $d = Auth::user()->receipts()->attach([Auth::id() => [
+//            'notes' => $request['notes'],
+//            'receipts_id' => $request['receipt_id'],
+//            'status' => 1,
+//        ]]);
+
+
+        $receipt = receipts::findOrFail($request['receipt_id']);
+        $receipt->fill([
+            'status' => 1,
+            'notes' => $request['notes'],
+            'manager_id' => Auth::id(),
+        ])->save();
+
+        return redirect::route('MyReceipt.show', $request['receipt_id']);
+
+    }
+
+    public function refuse(Request $request){
+
+        $request->validate([
+            'receipt_id'=> 'required|exists:receipts,id',
+            'notes' => 'nullable',
+        ]);
+
+
+//        $d = Auth::user()->receipts()->attach([Auth::id() => [
+//            'notes' => $request['notes'],
+//            'receipts_id' => $request['receipt_id'],
+//            'status' => 0,
+//        ]]);
+
+
+        $receipt = receipts::findOrFail($request['receipt_id']);
+        $receipt->fill([
+            'status' => 0,
+            'notes' => $request['notes'],
+            'manager_id' => Auth::id(),
+        ])->save();
+
+
+        return redirect::route('MyReceipt.show', $request['receipt_id']);
+
     }
 }

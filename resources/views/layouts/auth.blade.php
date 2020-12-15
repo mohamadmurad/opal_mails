@@ -53,9 +53,9 @@
                             <a class="nav-link" href="{{route('MyReceipt.index')}}">أوامر الدفع </a>
                         </li>
 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{route('receipt.index')}}">كل أوامر الدفع</a>
-                        </li>
+{{--                        <li class="nav-item active">--}}
+{{--                            <a class="nav-link" href="{{route('receipt.index')}}">كل أوامر الدفع</a>--}}
+{{--                        </li>--}}
 
                         <li class="nav-item active">
                             <a class="nav-link" href="{{route('user.index')}}">المستخدمين</a>
@@ -66,14 +66,11 @@
                             <a class="nav-link" href="{{route('companies.index')}}">الشركات</a>
                         </li>
 
-                    @elseif( \Illuminate\Support\Facades\Auth::user()->isManager === 0)
+
                         <li class="nav-item active">
                             <a class="nav-link" href="{{route('MyReceipt.index')}}">أوامر الدفع </a>
                         </li>
-                    @else
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{route('receipt.index')}}">كل أوامر الدفع</a>
-                        </li>
+
                     @endif
                 @endauth
 

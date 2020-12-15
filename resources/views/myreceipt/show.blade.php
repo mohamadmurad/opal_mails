@@ -85,6 +85,7 @@
 
     </div>
 
+
     @foreach($MyReceipt->files as $file)
         <div class=" rounded mx-auto d-block" >
             @if(Storage::disk('files')->exists($file->name))
@@ -108,7 +109,25 @@
     @endforeach
 </div>
 
+    @if(Auth::user()->isManager === 1)
+{{--        butomn --}}
+        @if($MyReceipt->status === null)
+            <button type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target="#accept_modal" data-whatever="{{$MyReceipt->id}}">
+                موافقة
+            </button>
 
+            <button type="button" class="btn btn-danger" data-toggle="modal"
+                    data-target="#refuse_modal" data-whatever="{{$MyReceipt->id}}">
+                رفض
+            </button>
+        @endif
+    @else
+
+    @endif
+
+
+    {{--        status --}}
     @if($MyReceipt->status !== null)
         <div class="accordion mt-lg-5" id="accordionExample">
             <div class="card">
@@ -146,6 +165,80 @@
     @endif
 
 
+    <div class="modal" id="accept_modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">موافقة</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
 
+                    <form action="{{ route('accept') }}" method="POST" id="accept_form">
+                        @csrf
+                        <input type="hidden" name="receipt_id" id="receipt_id" value="{{$MyReceipt->id}}">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <strong>ملاحظات:</strong>
+                                <textarea form="accept_form" type="text" name="notes" class="form-control"
+                                          rows="5" placeholder="ملاحظات">{{old('notes')}}</textarea>
+                                <ul class="errors">
+                                    @foreach ($errors->get('notes') as $message)
+                                        <i>{{ $message }}</i>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">موافقة</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    {{--                <button type="button" class="btn btn-primary">Save changes</button>--}}
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="refuse_modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">رفض</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="{{ route('refuse') }}" method="POST" id="refuse_form">
+                        @csrf
+                        <input type="hidden" name="receipt_id" id="receipt_id" value="{{$MyReceipt->id}}">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <strong>ملاحظات:</strong>
+                                <textarea form="refuse_form" type="text" name="notes" class="form-control"
+                                          rows="5" placeholder="ملاحظات">{{old('notes')}}</textarea>
+                                <ul class="errors">
+                                    @foreach ($errors->get('notes') as $message)
+                                        <i>{{ $message }}</i>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger">رفض</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    {{--                <button type="button" class="btn btn-primary">Save changes</button>--}}
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 @endsection
