@@ -22,18 +22,7 @@
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr">
       <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_1.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyReceiptsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReceiptsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myreceipt/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myreceipt/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myreceipt/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myreceipt/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/receipt/create.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/receipt/edit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/receipt/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/receipt/show.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FcmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FcmController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,21 +263,7 @@
       <workItem from="1607439446033" duration="111000" />
       <workItem from="1607523766347" duration="1235000" />
       <workItem from="1607776976856" duration="412000" />
-      <workItem from="1608023599517" duration="4243000" />
-    </task>
-    <task id="LOCAL-00029" summary="h">
-      <created>1606399999697</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1606399999697</updated>
-    </task>
-    <task id="LOCAL-00030" summary="h">
-      <created>1606400193895</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1606400193895</updated>
+      <workItem from="1608023599517" duration="4564000" />
     </task>
     <task id="LOCAL-00031" summary="h">
       <created>1606400305268</created>
@@ -619,7 +594,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607524189409</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="dr">
+      <created>1608029922359</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1608029922359</updated>
+    </task>
+    <task id="LOCAL-00079" summary="dr">
+      <created>1608030161559</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1608030161559</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,12 +661,12 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1607524200244">
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1608029925281">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607439537272" />
     <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606403856276" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-132.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607524200244" />
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-132.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1608029925281" />
     <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606814617796">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
