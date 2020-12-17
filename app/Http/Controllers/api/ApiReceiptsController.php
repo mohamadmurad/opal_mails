@@ -125,12 +125,9 @@ class ApiReceiptsController extends Controller
 
 
     public function destroy(Request $request){
-        //$MyReceipt = receipts::findOrFail($request['receiptId'])->first();
-        return response()->json([
-            'data' => $request->all(),
-            'code' => 400,
-        ]);
-        $receipt->delete();
+        $MyReceipt = receipts::findOrFail($request['id'])->first();
+
+        $MyReceipt->delete();
 
         return response()->json([
             'data' => true,
