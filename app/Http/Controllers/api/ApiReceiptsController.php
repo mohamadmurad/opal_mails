@@ -5,18 +5,25 @@ namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\FcmController;
+use App\Http\Requests\StoreReceiptRequest;
 use App\Http\Resources\EmployeeResource;
 use App\Http\Resources\ReceiptsResource;
+use App\Models\files;
 use App\Models\receipts;
 
 
 use App\Models\User;
+use Carbon\Carbon;
+use http\Exception;
+use I18N_Arabic;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Redirect;
-
-
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+include '../ar/Arabic.php';
 
 class ApiReceiptsController extends Controller
 {
@@ -42,6 +49,81 @@ class ApiReceiptsController extends Controller
         return new ReceiptsResource($receipt);
 
     }
+
+    public function store(StoreReceiptRequest $request)
+    {
+        $filesX = [];
+        DB::beginTransaction();
+        try {
+            $obj = new I18N_Arabic('Numbers');
+
+            $text = $obj->int2str($request['amount']);
+
+            $receipt = receipts::create([
+                'recipient_name' => $request['recipient_name'],
+                'amount' => $request['amount'],
+                'amountText' => $text,
+                'reason' => $request['reason'],
+                'employee_id' => Auth::id(),
+                'company_id' => $request['company_id'],
+                'status' =>null,
+            ]);
+
+            if($request->hasFile('files')){
+
+                $files = $request->file('files');
+
+                $i = 1;
+                foreach ($files as $file){
+
+                    $extension = $file->getClientOriginalExtension();
+
+                    $fileName = Str::slug( $request->get('recipient_name')) . '_' . $i++ .Str::slug( Carbon::now()) . '.' .$extension;
+                    $dd= Storage::disk('files')->put($fileName,  File::get($file));
+
+
+                    files::create([
+                        'name' => $fileName,
+                        'size' => $file->getSize(),
+                        'type' =>  $file->getMimeType(),
+                        'receipts_id' => $receipt->id,
+                    ]);
+
+
+                    $filesX +=[$fileName];
+                }
+
+            }
+
+            DB::commit();
+
+            return response()->json([
+                'data' => true,
+                'code' => 200,
+            ]);
+        }catch (Exception $e){
+            DB::rollBack();
+            foreach ($filesX as $fileX){
+
+                if (Storage::disk('files')->exists($fileX)){
+                    Storage::disk('files')->delete($fileX);
+                }
+
+            }
+
+        }
+
+        return response()->json([
+            'data' => "error",
+            'code' => 400,
+        ]);
+
+
+
+
+    }
+
+
 
     public function accept(Request $request){
 
