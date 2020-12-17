@@ -22,7 +22,6 @@
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr">
       <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_1.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,35 +266,7 @@
       <workItem from="1608034233198" duration="23000" />
       <workItem from="1608109426328" duration="1299000" />
       <workItem from="1608209078078" duration="2677000" />
-      <workItem from="1608216010891" duration="1060000" />
-    </task>
-    <task id="LOCAL-00041" summary="dr">
-      <created>1606403703588</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1606403703588</updated>
-    </task>
-    <task id="LOCAL-00042" summary="dr">
-      <created>1606403750811</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1606403750811</updated>
-    </task>
-    <task id="LOCAL-00043" summary="dr">
-      <created>1606403854323</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1606403854323</updated>
-    </task>
-    <task id="LOCAL-00044" summary="dr">
-      <created>1606563183149</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1606563183149</updated>
+      <workItem from="1608216010891" duration="1364000" />
     </task>
     <task id="LOCAL-00045" summary="dr">
       <created>1606563589840</created>
@@ -612,7 +583,35 @@
       <option name="project" value="LOCAL" />
       <updated>1608217055802</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="dr">
+      <created>1608217110427</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1608217110427</updated>
+    </task>
+    <task id="LOCAL-00091" summary="dr">
+      <created>1608217307860</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1608217307860</updated>
+    </task>
+    <task id="LOCAL-00092" summary="dr">
+      <created>1608217353690</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1608217353690</updated>
+    </task>
+    <task id="LOCAL-00093" summary="dr">
+      <created>1608217401981</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1608217401981</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,12 +665,12 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1608217058348">
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1608217404322">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607439537272" />
     <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606403856276" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-132.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1608217058348" />
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-132.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1608217404321" />
     <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606814617796">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
