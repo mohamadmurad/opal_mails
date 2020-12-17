@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-include '../ar/Arabic.php';
+include 'ar/Arabic.php';
 
 class ApiReceiptsController extends Controller
 {
