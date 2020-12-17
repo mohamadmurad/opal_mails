@@ -23,10 +23,11 @@ Route::post('/login', [\App\Http\Controllers\api\AuthApiController::class,'login
 
 Route::get('/receipt',[\App\Http\Controllers\api\ApiReceiptsController::class,'index'])->middleware('auth:api');
 Route::post('/receipt',[\App\Http\Controllers\api\ApiReceiptsController::class,'store'])->middleware('auth:api');
+Route::delete('/receipt',[\App\Http\Controllers\api\ApiReceiptsController::class,'destroy'])->middleware('auth:api');
+
 
 
 Route::get('/receipt/{receipt}',[\App\Http\Controllers\api\ApiReceiptsController::class,'show'])->middleware('auth:api');
-
 Route::post('/receipt/accept',[\App\Http\Controllers\api\ApiReceiptsController::class,'accept'])->middleware('auth:api');
 Route::post('/receipt/refuse',[\App\Http\Controllers\api\ApiReceiptsController::class,'refuse'])->middleware('auth:api');
 Route::post('/receipt/fcm',[\App\Http\Controllers\api\ApiReceiptsController::class,'fcm'])->middleware('auth:api');

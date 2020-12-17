@@ -20,56 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d82759-4f14-4e83-aeed-aa2178f595a7" name="Default Changelist" comment="dr">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/AutoSummarize.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Changes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/CharsetD.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/CompressStr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Date.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/GPL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Gender.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Glyphs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Hiero.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Identifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/KeySwap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/LGPL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Mktime.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Normalise.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Numbers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Salat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Soundex.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Standard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Stemmer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/StrToTime.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/Transliteration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/WordTag.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/ArDate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/ArKeySwap.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/ArNumbers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/ArQuery.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/ArSort.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/ArSoundex.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/ArStrToTime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/Transliteration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/ar-extra-stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/ar-logodd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/ar-stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/arab_countries.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/charset/ArUnicode.constants.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/charset/arabizi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/charset/charset.src" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/cities.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/en-logodd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/en-stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/female.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/important-words.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ar/Arabic/data/um_alqoura.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_1.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/files/hany-shaly_2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/api/ApiReceiptsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,17 +203,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\Resources" />
-      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\database\migrations" />
-      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\api" />
-      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\public\img" />
-      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Models" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\storage\app" />
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\storage\app\public" />
       <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\Controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\Controllers\api" />
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\Resources" />
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\database\migrations" />
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\app\Http\api" />
+      <recent name="C:\Users\mohamad.mu.HOMSICO\PhpstormProjects\manager_mails\public\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -313,14 +268,8 @@
       <workItem from="1608023599517" duration="4901000" />
       <workItem from="1608034233198" duration="23000" />
       <workItem from="1608109426328" duration="1299000" />
-      <workItem from="1608209078078" duration="1382000" />
-    </task>
-    <task id="LOCAL-00034" summary="h">
-      <created>1606401372066</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1606401372066</updated>
+      <workItem from="1608209078078" duration="2677000" />
+      <workItem from="1608216010891" duration="299000" />
     </task>
     <task id="LOCAL-00035" summary="h">
       <created>1606401382124</created>
@@ -658,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608209368963</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="dr">
+      <created>1608211251595</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1608211251595</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -712,12 +668,12 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="448" y="140" key="Github.UntrackedFilesDialog/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606378068129" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1608209372662">
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2" timestamp="1608213286720">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-120.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1607439537272" />
     <state x="312" y="168" key="Vcs.Push.Dialog.v2/-1280.-120.1280.994/0.0.1440.870@0.0.1440.870" timestamp="1606403856276" />
-    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-132.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1608209372662" />
+    <state x="312" y="166" key="Vcs.Push.Dialog.v2/-1280.-132.1280.984/0.0.1440.860@0.0.1440.860" timestamp="1608213286720" />
     <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606814617796">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
