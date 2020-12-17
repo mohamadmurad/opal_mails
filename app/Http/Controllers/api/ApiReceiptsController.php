@@ -125,7 +125,7 @@ class ApiReceiptsController extends Controller
 
 
     public function destroy(Request $request){
-        $MyReceipt = receipts::all()->where('id','=',$request['id']);
+        $MyReceipt = receipts::all()->where('id','=',$request['id'])->first();
         return response()->json([
             'data' => $MyReceipt,
             'code' => 400,
