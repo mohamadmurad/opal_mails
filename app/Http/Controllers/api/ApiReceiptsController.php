@@ -126,7 +126,6 @@ class ApiReceiptsController extends Controller
     public function update(StoreReceiptRequest $request){
 
         $MyReceipt = receipts::findOrFail($request['id']);
-        dd($MyReceipt->id);
 
         if ($MyReceipt->status === 0){
             $request->validate( [
@@ -149,8 +148,8 @@ class ApiReceiptsController extends Controller
 
 
         return response()->json([
-            'data' => "error",
-            'code' => 400,
+            'data' => true,
+            'code' => 200,
         ]);
 
     }
