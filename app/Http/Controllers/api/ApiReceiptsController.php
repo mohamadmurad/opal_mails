@@ -123,6 +123,36 @@ class ApiReceiptsController extends Controller
 
     }
 
+    public function update(StoreReceiptRequest $request){
+
+        $MyReceipt = receipts::findOrFail($request['id']);
+
+        if ($MyReceipt->status === 0 ){
+            $request->validate( [
+                'recipient_name' => 'required|max:255',
+                'amount' => 'required|integer|min:0',
+                'reason' => 'required|string',
+                'company_id' => 'required',
+            ]);
+
+
+
+            $MyReceipt->forceFill([
+                'recipient_name' =>$request['recipient_name'],
+                'amount' => $request['amount'],
+                'reason' => $request['reason'],
+                'company_id' => $request['company_id'],
+
+            ])->save();
+        }
+
+
+        return response()->json([
+            'data' => "error",
+            'code' => 400,
+        ]);
+
+    }
 
     public function destroy(Request $request){
         $MyReceipt = receipts::all()->where('id','=',$request['id'])->first();
