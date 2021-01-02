@@ -126,8 +126,9 @@ class ApiReceiptsController extends Controller
     public function update(StoreReceiptRequest $request){
 
         $MyReceipt = receipts::findOrFail($request['id']);
+        dd($MyReceipt->id);
 
-        if ($MyReceipt->status === 0 ){
+        if ($MyReceipt->status === 0){
             $request->validate( [
                 'recipient_name' => 'required|max:255',
                 'amount' => 'required|integer|min:0',
