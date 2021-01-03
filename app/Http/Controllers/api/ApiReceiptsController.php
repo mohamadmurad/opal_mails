@@ -127,7 +127,7 @@ class ApiReceiptsController extends Controller
 
         $MyReceipt = receipts::all()->where('id','=',$request['id'])->first();
 
-        if ($MyReceipt->status === 0){
+        if ($MyReceipt->status === null){
             $request->validate( [
                 'recipient_name' => 'required|max:255',
                 'amount' => 'required|integer|min:0',
