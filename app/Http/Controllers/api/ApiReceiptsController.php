@@ -146,7 +146,7 @@ class ApiReceiptsController extends Controller
             ])->save();
 
             return response()->json([
-                'data' => $MyReceipt->id,
+                'data' => true,
                 'code' => 200,
             ]);
         }
