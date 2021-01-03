@@ -68,6 +68,10 @@ class ApiReceiptsController extends Controller
                 'company_id' => $request['company_id'],
                 'status' =>null,
             ]);
+            return response()->json([
+                'data' => $request->all(),
+                'code' => 200,
+            ]);
 
             if($request->hasFile('file')){
 
