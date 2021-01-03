@@ -69,9 +69,9 @@ class ApiReceiptsController extends Controller
                 'status' =>null,
             ]);
 
-            if($request->hasFile('files')){
+            if($request->hasFile('file')){
 
-                $files = $request->file('files');
+                $files = $request->file('file');
 
                 $i = 1;
                 foreach ($files as $file){
