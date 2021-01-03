@@ -152,7 +152,9 @@ class ApiReceiptsController extends Controller
         }
 
         return response()->json([
-            'data' => false,
+            'data' => [
+                'error' => "لا يمكن تعديل هذا الأمر"
+            ],
             'code' => 500,
         ]);
 
